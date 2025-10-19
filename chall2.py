@@ -18,9 +18,8 @@ shared_int = A ^ b
 
 flag_int = flag2 ^ shared_int
 
-    # Step 2: Konversi integer kembali ke bytes
+# konversi integer kembali ke bytes
 flag_bytes = long_to_bytes(flag_int)
     
-    # Step 3: Decode menggunakan 'latin-1' untuk menghindari error
-    # dan tampilkan hasilnya.
+# yeay flag
 print(flag_bytes.decode())
